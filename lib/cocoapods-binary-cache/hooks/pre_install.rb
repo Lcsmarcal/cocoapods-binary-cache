@@ -108,7 +108,7 @@ module PodPrebuild
       # Otherwise, with incremental pod installation, CocoaPods downloads the sources
       # based on the `s.source` declaration in the podspecs which are sometimes incorrect.
       PodPrebuild.config.prebuilt_pod_names.each do |name|
-        @standard_sandbox.remove_local_podspec(name) if @standard_sandbox.checkout_sources.key?(name)
+        # @standard_sandbox.remove_local_podspec(name) if @standard_sandbox.checkout_sources.key?(name)
       end
     end
 
