@@ -1,4 +1,11 @@
 module Pod
+  class Target
+    class BuildType
+      def linkage
+          :static
+      end
+    end
+  end
   class Podfile
     class TargetDefinition
       def detect_prebuilt_pod(name, requirements)
