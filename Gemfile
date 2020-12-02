@@ -5,7 +5,7 @@ gemspec
 
 group :development do
   gem "bacon"
-  gem "cocoapods", "1.7.5"
+  gem "cocoapods"
   gem "mocha"
   gem "mocha-on-bacon"
   gem "prettybacon"
